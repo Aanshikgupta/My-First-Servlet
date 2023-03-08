@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+  <!--welcome-file>index.html</welcome-file-->
+  
+  <servlet>
+  
+  <servlet-name>HTTP Servlet</servlet-name>
+  
+  <servlet-class>com.servlets.MyServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet>
+  
+  <servlet-name>First Servlet</servlet-name>
+  
+  <servlet-class>com.servlets.FirstServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet>
+  
+  <servlet-name>Second-Generic Servlet</servlet-name>
+  
+  <servlet-class>com.servlets.SecondServlet</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  
+  	<servlet-name>HTTP Servlet</servlet-name>
+  	
+  	<url-pattern>/myservlet</url-pattern>
+  	
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  
+  	<servlet-name>First Servlet</servlet-name>
+  	
+  	<url-pattern>/web</url-pattern>
+  	
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  
+  	<servlet-name>Second-Generic Servlet</servlet-name>
+  	
+  	<url-pattern>/generic</url-pattern>
+  	
+  </servlet-mapping>
+  
+  
+</web-app>
